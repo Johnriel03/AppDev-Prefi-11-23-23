@@ -1,0 +1,183 @@
+:root {
+  --font: "Nunito";
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #737373;
+  color: #3c3c3c;
+  height: 50px;
+  padding: 20px;
+  /* margin-top: 10px; */
+}
+
+.navbar-logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-link {
+  display: block;
+  padding: 32px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 30px;
+  font-family: "Nunito";
+  float: right;
+}
+
+.navbar-link:hover {
+  color: #e3e3e3;
+}
+
+.navbar-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.navbar-toggle:focus {
+  outline: none;
+}
+
+.icon-bar {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+.background {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 51%,
+    rgba(115, 115, 115, 1) 100%
+  );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0%;
+  z-index: 100;
+}
+
+.bgwave {
+  background-position: relative;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0%;
+  z-index: -1;
+}
+
+.register {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  width: 400px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.register h1 {
+  text-align: center;
+  color: #000000;
+  margin: 10px 0px 20px;
+  font-size: 35px;
+  font-family: var(--font);
+}
+
+.register .form-element {
+  margin: 25px;
+  font-family: var(--font);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.register .form-element .label {
+  font-family: var(--font);
+  font-size: 15px;
+  color: #20232d;
+}
+
+.register .form-element input[type="text"],
+input[type="password"], input[type="email"] {
+  margin-top: 1px;
+  display: block;
+  width: 50%;
+  padding: 5px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 15px;
+  font-family: var(--font);
+}
+
+.register .form-element button {
+  margin-left: 8px;
+  width: 185%;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background-image: linear-gradient(
+    to right,
+    #000 0%,
+    #737373 51%,
+    #737373 100%
+  );
+  margin: 10px;
+  padding: 5px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+
+  color: #ffff;
+  border-radius: 150px;
+  cursor: pointer;
+}
+
+.register .form-element p,
+a {
+  text-align: center;
+  margin-top: -15px;
+}
+
+.register .form-element button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.register .form-element .error-msg {
+  margin: 8px 0;
+  display: block;
+  background: crimson;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+
